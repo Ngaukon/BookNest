@@ -1,0 +1,38 @@
+.book-details {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.book-details img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.book-details h2 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.book-details p {
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.buy-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.buy-button:hover {
+    background-color: #218838;
+}

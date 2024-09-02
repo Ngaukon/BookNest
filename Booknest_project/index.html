@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booknest</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <img src="Images/logo.png" class="logo">
+        <ul>
+            <li><a href="collegebooks.html">College</a></li>
+            <li><a href="#">KCSE/KCPE</a></li>
+            <li><a href="#">Driving</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+        </nav>
+
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="Images/comm.png" alt="Slide 1">
+            </div>
+            <div class="mySlides fade">
+                <img src="Images/ict.png" alt="Slide 2">
+            </div>
+            <div class="mySlides fade">
+                <img src="Images/lifeskills.png" alt="Slide 3">
+            </div>
+            <!-- Add more slides as needed -->
+
+        </div>
+
+    </div>
+
+    <!-- Javascript Slideshow Functionality -->
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let slides = document.querySelectorAll(".mySlides");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            slides[slideIndex - 1].style.display = "block";  
+            setTimeout(showSlides, 8000); // Change image every 5 seconds
+        }
+
+
+    </script>
+
+    <!-- Footer Section Not completed-->
+     <div class="footer">
+        <div class="col-1">
+            <h3>Our Pages</h3>
+            <a href="#">College Materials</a>
+            <a href="#">College Materials</a>
+            <a href="#">College Materials</a>
+            <a href="#">College Materials</a>
+        </div>
+        <div class="col-2">
+            <h3>Contact Us</h3>
+        </div>
+        
+     </div>
+
+</body>
+</html>
